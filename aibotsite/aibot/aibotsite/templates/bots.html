@@ -1,0 +1,14 @@
+{% extends "baza.html" %}
+
+{% block title %}Б0ты{% endblock%}
+
+{% block content %}
+        <div class="header"><span>Боты:</span></div>
+        {% for i in bots%}
+            <div class="news_new">
+                <span class="news_header">{{i.name}}</span>
+                <div class="news_anons">{{i.short_desc}}</div>
+                <a class="news_link" href="{% url 'read_bot' i.id %}">ОТКРЫТЬ</a>
+            </div>
+        {% endfor %}
+{% endblock%}

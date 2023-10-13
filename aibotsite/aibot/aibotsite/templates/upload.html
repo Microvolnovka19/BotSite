@@ -1,0 +1,23 @@
+{% extends "baza.html" %}
+
+{% block title %}Добавить бота{% endblock%}
+
+{% block content %}
+<div class="news_buttons">
+    <a href="{% url 'bots' %}" class="btn btn-primary">Вернуться</a><br>
+</div>
+<div class="news_create_block">
+    <h1 class="header_news">Новый бот</h1><br>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.name }}
+        {{ form.author }}
+        {{ form.short_desc }}
+        {{ form.file }}
+        {% if error %}
+            <h1 class="header_news">{{ error }}</h1><br>
+        {% endif %}
+        <input type="submit" value="Готово" class="btn btn-success">
+    </form>
+</div>
+{% endblock%}

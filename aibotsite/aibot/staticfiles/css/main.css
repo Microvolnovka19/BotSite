@@ -1,0 +1,165 @@
+aside {
+    padding: 2.5%;
+    width: 15%;
+    float: left;
+    background-color: black;
+    height: 100vh;
+    border-right: 1px solid red;
+    overflow: auto;
+}
+aside ul li{
+    list-style-type: none;
+    margin-bottom: 10px;
+    margin-left: 7.5%;
+    color: red;
+    transition: transform 0.1s ease;
+}
+aside ul li a{
+    text-decoration: none;
+    color: red;
+}
+aside ul li:hover{
+    transform: translateX(15px)
+}
+main {
+    background-color: rgb(3, 3, 3);
+    height: 100vh;
+    overflow: auto;
+}
+p, span {
+    color: red;
+}
+.logo-text {
+    color: red;
+    font-size: 30px;
+    margin-left: 0%;
+    text-align: left;
+}
+.syn-logo {
+    max-width: 100%;
+}
+.header {
+    font-size: 100px;
+    margin-right: 5%;
+    text-align: center;
+}
+.text-block {
+    margin-left: 3%;
+    text-align: left;
+    font-size: 16px;
+}
+.news_new {
+    background-color: rgb(41, 41, 41);
+    width: 35%;
+    padding: 5px;
+    margin-right: 35%;
+    margin-bottom: 20px;
+    text-align: center;
+    border:1px solid black;   
+    border-top-left-radius: 25px; 
+    border-top-right-radius: 25px; 
+    float: right;
+}
+.news_header{
+    font-size: 50px;
+    color: orange;
+}
+.news_anons{
+    color:orangered;
+    text-align: center;
+    word-wrap: break-word;
+}
+.news_link{
+    text-decoration: none;
+    background-color: black;
+    color: goldenrod;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+
+.header_news{
+    font-size: 50px;
+    color: red;
+}
+.news_block{
+    width:60%;
+    background-color: rgb(5, 5, 5);
+    float:right;
+    margin-right: 10%;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.news_create_block{
+    width: 60%;
+    background-color: rgb(5, 5, 5);
+    float:right;
+    margin-right: 10%;
+    text-align: center;
+}
+.news_create_block input{
+    margin-top: 20px;
+    text-align: center;
+}
+.news_create_block textarea{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.news_buttons {
+    float: right;
+}
+
+.news_buttons button{
+    align-items: center;
+    width:150px;
+    padding: 10px;
+    margin-right: 7ch;
+    margin-top: 50px;
+}
+
+.news_buttons a{
+    align-items: center;
+    width:150px;
+    padding: 10px;
+    margin-right: 7ch;
+    margin-top: 50px;
+}
+
+.news_create_button {
+    border-top: 1px red solid;
+    padding-top: 10px;
+}
+
+.about { 
+    margin-top: 2%;
+    width: 60%;
+    float:right;
+    margin-right: 20%;
+    text-align: center;
+}
+
+.about_header {
+    color:red;
+    font-size: 60px;
+    border-radius: 10px;
+    border: solid 1px red;
+}
+
+.about_header_cats {
+    color:red;
+    font-size: 20px;
+    border-radius: 10px;
+    border: solid 1px red;
+}
+
+.video_song {
+    margin-top: 2%;
+    width: 60%;
+    float:right;
+    margin-right: 20%;
+    text-align: center;
+    border: solid 1px red;
+    border-radius: 10px;
+}

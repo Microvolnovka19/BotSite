@@ -1,0 +1,18 @@
+{% extends "baza.html" %}
+
+{% block title %}{{bot.name}}{% endblock%}
+
+{% block content %}
+    <div class="news_buttons">
+        <a href="{% url 'bots' %}" class="btn btn-primary">Вернуться</a><br>
+        <a href="{% url 'redact_bot' bot.id %}" class="btn btn-secondary">Редактировать</a><br>
+        <a href="{% url 'delete_bot' bot.id %}" class="btn btn-danger">Удалить</a><br>
+        <a href="{% url 'download_bot' bot.id %}" class="btn btn-danger">Cкачать файл</a><br>
+    </div>
+    <div class="news_block">
+        <span class="header_news">{{bot.name}}</span><br>
+        <span class="text-block-news">Краткое описание: {{bot.short_desc}}</span><br>
+        <span class="text-block-news">Автор: {{bot.author}}</span><br>
+        <span class="text-block-news">{{bot.file|linebreaksbr}}</span><br>
+    </div>
+{% endblock%}

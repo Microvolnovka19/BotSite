@@ -1,0 +1,16 @@
+{% extends "baza.html" %}
+
+{% block title %}{{bot.title}}{% endblock%}
+
+{% block content %}
+    <div class="news_buttons">
+        <a href="{% url 'bots' %}" class="btn btn-primary">Вернуться</a><br>
+    </div>
+    <div class="news_create_block">
+        <h1 class="header_news">Вы точно хотите удалить бота?</h1><br>
+        <form method="post">
+            {% csrf_token %}
+            <input type="submit" value="ДА!!!!!!!!!!!!!!!" class="btn btn-success">
+        </form>
+    </div>
+{% endblock%}

@@ -1,0 +1,22 @@
+{% extends "baza.html" %}
+
+{% block title %}Главная страница{% endblock%}
+
+{% block content %}
+        <div class="header"><span>API</span></div>
+        <div class="text-block"><p>1. Загрузка файла на сервер к боту с айди 4<br>
+                curl -X 'PUT' '127.0.0.1:8000/api/v1/bot/4/upload/' -F 'file=@img.png'<br><br>
+                2. Удаление бота с айди 4<br>
+                curl -X 'DELETE' '127.0.0.1:8000/api/v1/bot/4/delete/'<br><br>
+                3. Создание нового бота БЕЗ ФАЙЛА. Файл загружается отдельной командой(см первый пункт)<br>
+                curl -X 'POST' '127.0.0.1:8000/api/v1/bot/new/' -H 'Content-Type: application/json' -d'{"name":"CURL","author":"AVTOR","short_desc":"OPICANIE"}'<br><br>
+                4. Получить список ботов<br>
+                curl -X 'GET' '127.0.0.1:8000/api/v1/bot/'<br><br>
+                5. Получить инфу о боте 1<br>
+                curl -X 'GET' '127.0.0.1:8000/api/v1/bot/1/'<br><br>
+                6. Получить файл бота с айди 1<br>
+                curl -X 'GET' '127.0.0.1:8000/api/v1/bot/1/file/'<br><br>
+                7. Обновить инфу о боте 5. БЕЗ ФАЙЛА. Файл меняется через первый пункт<br>
+                curl -X 'PUT' '127.0.0.1:8000/api/v1/bot/5/edit/' -H 'Content-Type: application/json' -d'{"name":"CURL","author":"AVTOR","short_desc":"OPICANIE"}'<br><br>
+                </p></div>
+{% endblock%}
